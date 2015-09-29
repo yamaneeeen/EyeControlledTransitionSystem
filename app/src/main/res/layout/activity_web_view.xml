@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tabHost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:background="#888888"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </TabWidget>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3">
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/first_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.example.ta.eyecontrolledtransitionsystem.MyWebView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/webView1" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/second_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.example.ta.eyecontrolledtransitionsystem.MyWebView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/webView2" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/third_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.example.ta.eyecontrolledtransitionsystem.MyWebView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/webView3" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/forth_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.example.ta.eyecontrolledtransitionsystem.MyWebView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/webView4" />
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</TabHost>
